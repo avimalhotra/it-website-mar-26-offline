@@ -25,6 +25,7 @@ body{ font: 16px var(--ff);}
 .justify-right{ justify-content: end;}
 .justify-space-bet{ justify-content: space-around;}
 .img-resp{ max-width: 100%; height: auto; }
+.text-center{ text-align: center;}
 
 
 .container{ max-width: 1260px; margin: auto; padding: 0 1rem; }
@@ -60,7 +61,25 @@ header{ margin-bottom: 61px;}
 .banner a{ width: 185px; line-height: 50px; background: var(--white); color:var(--black); text-align: center; border-radius: 5px; font-weight: 600; }
 
 
-.wrap-2{ padding: 10rem 0; }
+.wrap-2{ padding: 10rem 0;}
+main h2{ color: var(--blue); font-size: 20px; font-weight: 500; margin-bottom: 1rem; }
+main h2 + p{ font-size: 28px;font-weight: 700;}
+
+.service{ box-shadow: 0 0 10px #0000001a; padding: 45px 60px 40px 30px; margin-top: 4rem; border-radius: 5px; position: relative; }
+.service h3{ font-size: 20px; font-weight: 600;}
+.service p{ opacity: 0.6; font-size: 14px; margin: 2rem 0 3rem;}
+.service a{ font-size: 14px; color: inherit; }
+.service.bt::before{ content: ""; position: absolute; left: 0; right: 0; top: 0; height: 15px; background: var(--blue); border-radius: 5px 5px 0 0;}
+.service.active{ background: var(--blue); color: var(--white);}
+
+
+.info{ margin: 10rem 0; text-align: center;}
+.info p.num{ font-size: 24px; font-weight: 600; margin-top: 21px; }
+.info p.details{ font-size: 14px; font-weight: 500; margin-bottom: 22px;}
+
+.about{}
+.about .text{ font-size: 14px; margin: 2rem 0 3rem;}
+.about ul{ list-style: disc; padding-left: 4rem; line-height: 40px;}
 
 .wrap-3{background: var(--blue); color: var(--white); padding: 6rem 0;}
 
@@ -68,10 +87,12 @@ header{ margin-bottom: 61px;}
 
 @media screen and (max-width:1279px) {
       h1{ font-size: 30px;}
+      .service{ padding: 45px 15px 40px 15px;}
 }
 
 
 @media screen and (max-width:980px) {
+     .col-t-order-before{ order: -1;}
      .col-t-1{ grid-column: span 1;}
      .col-t-2{ grid-column: span 2;}
      .col-t-3{ grid-column: span 3;}
@@ -106,6 +127,7 @@ header{ margin-bottom: 61px;}
      .col-m-11{ grid-column: span 11;}
      .col-m-12{ grid-column: span 12;}
      .col-m-order-before{ order: -1;}
+     .service{ padding: 45px 40px 40px 30px;}
 }
 
 @media screen and (max-width:480px) {
