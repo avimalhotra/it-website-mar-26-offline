@@ -23,9 +23,11 @@ body{ font: 16px var(--ff);}
 .flex{ display: flex;}
 .align-center{ align-items: center; }
 .justify-right{ justify-content: end;}
+.justify-center{ justify-content: center;}
 .justify-space-bet{ justify-content: space-around;}
 .img-resp{ max-width: 100%; height: auto; }
 .text-center{ text-align: center;}
+.g-2{ gap: 2rem;}
 
 
 .container{ max-width: 1260px; margin: auto; padding: 0 1rem; }
@@ -77,9 +79,41 @@ main h2 + p{ font-size: 28px;font-weight: 700;}
 .info p.num{ font-size: 24px; font-weight: 600; margin-top: 21px; }
 .info p.details{ font-size: 14px; font-weight: 500; margin-bottom: 22px;}
 
-.about{}
 .about .text{ font-size: 14px; margin: 2rem 0 3rem;}
 .about ul{ list-style: disc; padding-left: 4rem; line-height: 40px;}
+
+.our-works{ margin: 10rem 0; }
+.our-works ul{ margin-top: 4rem;}
+.works{ gap: 2rem;}
+.works a.vert{  width: 85px; height: 300px; flex-shrink: 0; writing-mode: sideways-lr; text-align: center; line-height: 85px; box-shadow: 0 0 18px #0000001a; border-radius: 5px; color: var(--blue); font-size: 24px; font-weight: 500; border: 2px solid transparent; }
+.works li.active a.vert{ border-color: var(--blue); }
+.work-collapse{ display: none;}
+.work-collapse h3{ font-size: 24px; font-weight: 500;}
+.work-collapse p{ font-size: 14px; opacity: 0.6; margin: 1rem 0 2rem;}
+.work-collapse a{ width: 185px; line-height: 51px; text-align: center; background: var(--blue); color: var(--white); border-radius: 5px; font-size: 14px; }
+li.active .work-collapse{ display: block;}
+
+
+.testimonials{ margin-top: 4rem;}
+.review{ text-align: center; }
+.ratings span{ color: var(--gray);}
+.ratings span.filled{ color: var(--orange);}
+.review .shadow{ box-shadow: 0 0 18px #0000001a; padding: 60px 64px 0; }
+.review  p{ font-size: 14px; margin: 2rem 0;}
+.review  h3{ font-size: 16px; font-weight: 600; margin-top: 54px;}
+.review  small{ font-size: 14px; }
+.review  img{ transform: translateY(34px);}
+
+
+.projects{ margin: 10rem 0;}
+.project-text{ max-width: 400px; margin: auto; }
+.projects p:not(:nth-child(2)){ font-size: 14px; margin: 3rem 0; }
+.projects a{ width: 214px; line-height: 51px; background: var(--blue); color: var(--white); border-radius: 5px; text-align: center; }
+
+.team{ text-align: center;}
+.team-member{ box-shadow: 0 0 18px #0000001a; padding: 1rem 1rem 64px 1rem; margin-top: 4rem;}
+.team h3{ font-size: 24px; font-weight: 600; margin: 2rem 0 5px;}
+.team ul{ gap: 5rem; margin-top: 4rem;}
 
 .wrap-3{background: var(--blue); color: var(--white); padding: 6rem 0;}
 
@@ -88,6 +122,7 @@ main h2 + p{ font-size: 28px;font-weight: 700;}
 @media screen and (max-width:1279px) {
       h1{ font-size: 30px;}
       .service{ padding: 45px 15px 40px 15px;}
+      .review .shadow{ padding: 60px 34px 0;}
 }
 
 
@@ -107,6 +142,9 @@ main h2 + p{ font-size: 28px;font-weight: 700;}
      .col-t-12{ grid-column: span 12;}
      .wrap-1 nav ul{ gap: 2rem;}
      .banner h2{ font-size: 26px;}
+     .work-collapse img{ width: 180px; height: auto; }
+     .review .shadow{ padding: 20px 14px 0;}
+     .team ul{gap: 2rem;}
 }
 
 
@@ -128,6 +166,10 @@ main h2 + p{ font-size: 28px;font-weight: 700;}
      .col-m-12{ grid-column: span 12;}
      .col-m-order-before{ order: -1;}
      .service{ padding: 45px 40px 40px 30px;}
+     .works.flex{ flex-flow: column; }
+     .works a.vert{ writing-mode: horizontal-tb; width: 100%; height: auto;}
+     .works li > .flex{ flex-flow: column;}
+      .team ul{ gap: 1rem;}
 }
 
 @media screen and (max-width:480px) {
@@ -143,5 +185,8 @@ main h2 + p{ font-size: 28px;font-weight: 700;}
      .col-p-10{ grid-column: span 10;}
      .col-p-11{ grid-column: span 11;}
      .col-p-12{ grid-column: span 12;}
+     .work-collapse .flex{ flex-flow: column;}
+     .work-collapse img{ width:fit-content; max-width: 100%; height: auto; }
+     .team h3{ font-size: 20px;}
+     .team ul{ gap: 5rem;}
 }
-
