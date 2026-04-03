@@ -24,7 +24,7 @@ body{ font: 16px var(--ff);}
 .align-center{ align-items: center; }
 .justify-right{ justify-content: end;}
 .justify-center{ justify-content: center;}
-.justify-space-bet{ justify-content: space-around;}
+.justify-space-bet{ justify-content: space-between;}
 .img-resp{ max-width: 100%; height: auto; }
 .text-center{ text-align: center;}
 .g-2{ gap: 2rem;}
@@ -116,6 +116,10 @@ li.active .work-collapse{ display: block;}
 .team ul{ gap: 5rem; margin-top: 4rem;}
 
 .wrap-3{background: var(--blue); color: var(--white); padding: 6rem 0;}
+.wrap-3 h3{ color: var(--gray); margin-bottom: 23px;}
+.wrap-3 a{ color: inherit;}
+.wrap-3 li{ line-height: 40px;}
+.copy{ color: var(--gray); margin-top: 4rem;}
 
 
 
@@ -169,7 +173,8 @@ li.active .work-collapse{ display: block;}
      .works.flex{ flex-flow: column; }
      .works a.vert{ writing-mode: horizontal-tb; width: 100%; height: auto;}
      .works li > .flex{ flex-flow: column;}
-      .team ul{ gap: 1rem;}
+     .team ul{ gap: 1rem;}
+     .copy{ flex-flow: column;}
 }
 
 @media screen and (max-width:480px) {
